@@ -1,0 +1,99 @@
+@import "nav.css";
+@import "footer.css";
+@import "utility.css";
+
+main {
+  display: grid;
+}
+.main__left {
+  display: flex;
+  flex-direction: column;
+  background-color: antiquewhite;
+  padding: 2rem;
+  gap: 20px;
+}
+.main__title {
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+.article__title {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+.main__paragraph {
+  text-align: justify;
+}
+.here {
+  color: purple;
+}
+.main__right {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main__right__article {
+  border: solid 1px black;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main__right__article {
+  width: 250px;
+}
+.right__article__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.left__bloc {
+  padding: 1.7rem;
+  background-color: antiquewhite;
+}
+.btn__read {
+  margin-top: 1.4rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 1px;
+  outline: none;
+  border: 1px black solid;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.btn__read:hover {
+  background-color: azure;
+}
+.btn__read:active {
+  transform: scale(0.9);
+}
+.left__articles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.img__blog {
+  width: 100%;
+}
+.container__img {
+  border: solid 1px black;
+  background-color: white;
+}
+.container__img > figcaption {
+  background-color: #eee;
+  text-align: center;
+  padding: 0.5rem;
+}
+.source {
+  color: #287878;
+  text-decoration: underline;
+}
+@media (min-width: 767px) {
+  main {
+    grid-template-columns: 60% 40%;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    grid-template-columns: 70% 30%;
+  }
+}

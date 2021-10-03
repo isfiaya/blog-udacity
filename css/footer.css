@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeee;
+  padding: 1rem;
+  gap: 1rem;
+}
+.icon__social {
+  font-size: 1.5rem;
+  margin-right: 0.6rem;
+}
+.icon__social:hover {
+  color: aqua;
+}
